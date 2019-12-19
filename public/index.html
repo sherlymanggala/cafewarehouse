@@ -34,8 +34,7 @@
         <div class="very-top-nav-bar">
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto"></ul> <!-- DO NOT REMOVE THIS -->
-              <ul class="navbar-nav">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Account</a>
                 </li>
@@ -53,20 +52,28 @@
           </nav>
         </div>
         <div class="top-nav-bar">
-<!--          <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--            <a class="navbar-brand" href="#">-->
-<!--              <img src="../src/assets/CAFE-WAREHOUSE-LOGO-NEW.png" class="d-inline-block align-top" width="120" height="60"-->
-<!--                   alt="Cafe Warehouse"/>-->
-<!--            </a>-->
-<!--          </nav>-->
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+              <img src="../src/assets/CAFE-WAREHOUSE-LOGO-NEW.png" class="d-inline-block align-top" width="120" height="60"
+                   alt="Cafe Warehouse"/>
+            </a>
+            <form class="form-inline mr-auto ml-auto">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+            </ul>
+          </nav>
+        </div>
+        <div class="top-nav-bar-2">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -77,15 +84,8 @@
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
             </div>
           </nav>
-        </div>
-        <div class="top-nav-bar-2">
-
         </div>
       </div>
       <div class="body-main">
