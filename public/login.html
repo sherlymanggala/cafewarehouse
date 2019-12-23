@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe Warehouse</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.6.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.6.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.6.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.6.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- FontAwesome icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap v4.4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Header section containing title -->
+        <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
+                    <h3>Sign in with username/password demo</h3>
+                </div>
+            </div>
+        </header>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+
+                <!-- Card containing the sign-in UI -->
+                <div id="demo-signed-out-card" class="mdl-card mdl-shadow--2dp mdl-cell">
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                        <p>
+                            This web application demonstrates how you can Sign In with a username/password using Firebase Authentication.
+                            For the purpose of this example only a password of `Testing123` will succeed.
+                        </p>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="demo-sign-in-username">
+                            <label class="mdl-textfield__label" for="demo-sign-in-username">Username</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="demo-sign-in-password">
+                            <label class="mdl-textfield__label" for="demo-sign-in-password">Password</label>
+                        </div>
+                        <button id="demo-sign-in-button" class="mdl-color-text--grey-700 mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">account_circle</i> Sign in</button>
+                        <p>
+                            <strong id="demo-sign-in-error" class="mdl-color-text--orange-900"></strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card containing the signed-in UI -->
+                <div id="demo-signed-in-card" class="mdl-card mdl-shadow--2dp mdl-cell">
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                        <p>
+                            Welcome <span id="demo-name-container"></span><br>
+                            Your Firebase User ID is: <span id="demo-uid-container"></span><br>
+                        </p>
+                        <button id="demo-sign-out-button" class="mdl-color-text--grey-700 mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect">Sign out</button>
+                        <button id="demo-delete-button" class="mdl-color-text--grey-700 mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect">Delete account</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.6.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.6.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+</html>
